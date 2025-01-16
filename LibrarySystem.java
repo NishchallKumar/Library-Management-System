@@ -23,7 +23,7 @@ class Book {
 class User {
     int userId;
     String name;
-    Map<Integer, Long> borrowedBooks; // Book ID with issue timestamp
+    Map<Integer, Long> borrowedBooks; 
 
     public User(int userId, String name) {
         this.userId = userId;
@@ -113,11 +113,11 @@ public class LibrarySystem {
     public static void main(String[] args) {
         LibraryManagementSystem library = new LibraryManagementSystem();
 
-        // Sample data
-        library.addBook(new Book(1, "The Alchemist", "Paulo Coelho", "Fiction"));
-        library.addBook(new Book(2, "Clean Code", "Robert C. Martin", "Programming"));
-        library.addUser(new User(1, "Alice"));
-        library.addUser(new User(2, "Bob"));
+        
+        library.addBook(new Book(1, "Computer Science", "Sumita Arora", "Programming"));
+        library.addBook(new Book(2, "Business Studies", "Vinay Kumar", "Commerce"));
+        library.addUser(new User(1, "Nishchal"));
+        library.addUser(new User(2, "Madhav"));
 
         // Menu
         Scanner sc = new Scanner(System.in);
